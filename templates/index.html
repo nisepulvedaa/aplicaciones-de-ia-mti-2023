@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blu - Tu Agente de IA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>¡Hola, soy <strong>Blu</strong>! 🤖</h1>
+    <p>Tu agente de IA y estoy aquí para ayudarte 💡</p>
+
+    <textarea placeholder="¿En qué puedo ayudarte hoy?" rows="3" id="preguntaInput"></textarea>
+    <br>
+    <button>Preguntar</button>
+
+    <div class="agent-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="IA Blu Avatar">
+    </div>
+
+    <!-- Cuadro de respuesta -->
+    <div class="response-box" id="responseBox" style="display: none;">
+      <div class="response-icon">💬</div>
+      <div class="response-text" id="responseText"></div>
+    </div>
+
+    <!-- Indicador de alucinación -->
+    <div class="hallucination-box" id="hallucinationBox" style="display: none;">
+      <span id="hallucinationText"></span>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/funciones.js') }}">  </script>
+</body>
+</html>

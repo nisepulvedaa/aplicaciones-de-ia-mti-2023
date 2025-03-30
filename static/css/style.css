@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  h1 {
+    color: #00ffe0;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  
+  input[type="text"] {
+    width: 95%;                /* Aumentamos el ancho */
+    max-width: 800px;          /* Establecemos un límite máximo */
+    padding: 18px;             /* Un poco más de espacio interno */
+    font-size: 18px;           /* Letra más grande */
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,255,224,0.2);
+  }
+
+  textarea {
+    width: 95%;
+    max-width: 800px;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    resize: vertical; /* permite redimensionar hacia abajo */
+    height: 80px; /* altura base */
+    box-shadow: 0 0 10px rgba(0,255,224,0.2);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  
+  
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #00ffe0;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00c2a6;
+  }
+  
+  .agent-image {
+    margin-top: 30px;
+  }
+  
+  .agent-image img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #00ffe0;
+    box-shadow: 0 0 15px rgba(0,255,224,0.5);
+  }
+  
+  /* Nueva caja de respuesta estilizada */
+  .response-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 255, 224, 0.08);
+    border: 1px solid rgba(0, 255, 224, 0.5);
+    color: #ffffff;
+    font-size: 17px;
+    text-align: left;
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(0, 255, 224, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .response-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .hallucination-box {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .hallucination-box.safe {
+    background-color: rgba(0, 255, 153, 0.15);
+    border: 1px solid #00ff99;
+    color: #00ffcc;
+  }
+  
+  .hallucination-box.warning {
+    background-color: rgba(255, 0, 0, 0.12);
+    border: 1px solid #ff5c5c;
+    color: #ff8080;
+  }
+  
