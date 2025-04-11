@@ -58,3 +58,22 @@ Se implementó una demo funcional donde el usuario puede ingresar preguntas en l
 - [arxiv.org - RAG Systems 2024](https://arxiv.org/abs/2407.19994)
 - Documentación interna Colbún (no pública)
 
+---
+
+## Anexos - Pasos de implementación
+
+1. [Instalar Postgresql] (https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+2. Instalar pgvector
+- El repositorio se encuentra en: https://github.com/pgvector/pgvector
+- Los pasos de Instalación se encuentran en: https://www.youtube.com/watch?v=L4RWjinJacI
+3. Crear un .env file con la siguiente estructura:
+OPENAI_API_KEY="KEY"
+TAVILY_API_KEY="KEY"
+Y colocarla en el directorio principal
+4. Cargar un archivo .pdf en el directorio principal
+5. Crear las credenciales de BD en los archivos:
+- pdf_to_pg_embeddings.py
+- multiagent_rag.py
+6. Ejecutar primeramente el script pdf_to_pg_embeddings.py
+7. Lanza el app.py y abrir la app de Flask desde http://127.0.0.1:5000/ en un browser
+8. Haga las preguntas al asistente para obtener sus respuestas!
